@@ -1,7 +1,7 @@
 'use server';
 
-import { signIn } from '@/auth';
-import { DEFAULT_LOGIN_REDIRECT } from '@/routes';
+import { signIn } from '@/auth/auth';
+import { DEFAULT_LOGIN_REDIRECT } from '@/auth/routes';
 import { SignInSchema } from '@/schemas';
 import * as z from 'zod';
 import { AuthError } from 'next-auth';

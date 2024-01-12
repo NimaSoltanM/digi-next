@@ -1,10 +1,10 @@
 import credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
 
-import { SignInSchema } from './schemas';
+import { SignInSchema } from '../schemas';
 
 import type { NextAuthConfig } from 'next-auth';
-import { db } from './lib/db';
+import { db } from '../lib/db';
 
 export default {
   providers: [
