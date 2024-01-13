@@ -1,6 +1,7 @@
 import { SheetTrigger, SheetContent, Sheet } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import NavButton from './nav-button';
 
 export default function Nav() {
   return (
@@ -62,9 +63,7 @@ export default function Nav() {
         </nav>
       </div>
       <div className='ml-auto w-[150px]'>
-        <Button asChild>
-          <Link href='/sign-in'>Sign In</Link>
-        </Button>
+        <NavButton />
       </div>
     </header>
   );
