@@ -27,6 +27,7 @@ import * as z from 'zod';
 import { useTransition } from 'react';
 import signUpAction from './sign-up-action';
 import { toast } from 'sonner';
+import Socials from '../socials';
 
 export default function Page() {
   const [isPending, startTransition] = useTransition();
@@ -54,7 +55,7 @@ export default function Page() {
   }
 
   return (
-    <main className='mt-8'>
+    <main>
       <Card className='w-full max-w-md mx-auto'>
         <CardHeader>
           <CardTitle className='text-2xl font-bold text-center'>
@@ -136,6 +137,7 @@ export default function Page() {
               </Button>
             </form>
           </Form>
+          <Socials />
         </CardContent>
         <CardFooter>
           <div className='text-center text-sm'>

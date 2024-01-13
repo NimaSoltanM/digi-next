@@ -5,7 +5,7 @@ import NavButton from './nav-button';
 
 export default function Nav() {
   return (
-    <header className='flex h-20 w-full shrink-0 items-center px-4 md:px-6'>
+    <header className='flex h-20 w-full shrink-0 items-center px-4 md:px-10'>
       <Sheet>
         <SheetTrigger asChild>
           <Button className='lg:hidden' size='icon' variant='outline'>

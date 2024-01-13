@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/ZKTVG4kp4jY
- */
-import Link from 'next/link';
 import { AvatarImage, AvatarFallback, Avatar } from '@/components/ui/avatar';
 import { CardContent, Card } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';

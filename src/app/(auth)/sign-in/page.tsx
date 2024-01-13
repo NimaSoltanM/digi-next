@@ -27,6 +27,7 @@ import * as z from 'zod';
 import { useTransition } from 'react';
 import { toast } from 'sonner';
 import { signInAction } from './sign-in-action';
+import Socials from '../socials';
 
 export default function Page() {
   const [isPending, startTransition] = useTransition();
@@ -102,6 +103,8 @@ export default function Page() {
               </Button>
             </form>
           </Form>
+
+          <Socials />
         </CardContent>
         <CardFooter>
           <div className='text-center text-sm'>

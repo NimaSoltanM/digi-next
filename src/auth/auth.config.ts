@@ -1,5 +1,6 @@
 import credentials from 'next-auth/providers/credentials';
 import bcrypt from 'bcryptjs';
+import Github from 'next-auth/providers/github';
 
 import { SignInSchema } from '../schemas';
 
@@ -8,6 +9,10 @@ import { db } from '../lib/db';
 
 export default {
   providers: [
+    Github({
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
+    }),
     credentials({
       async authorize(credentials) {
         const validatedFields = SignInSchema.safeParse(credentials);
