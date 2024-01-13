@@ -50,7 +50,7 @@ export default function Page() {
   }
 
   return (
-    <main className='flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8'>
+    <main className='mt-16 px-4 sm:px-6 lg:px-8'>
       <Card className='w-full max-w-md mx-auto'>
         <CardHeader>
           <CardTitle className='text-2xl font-bold text-center'>

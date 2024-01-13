@@ -54,7 +54,7 @@ export default function Page() {
   }
 
   return (
-    <main className='flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8'>
+    <main className='mt-8'>
       <Card className='w-full max-w-md mx-auto'>
         <CardHeader>
           <CardTitle className='text-2xl font-bold text-center'>
@@ -142,7 +142,7 @@ export default function Page() {
             Already have an account?
             <Link
               className='font-medium text-indigo-600 hover:text-indigo-500'
-              href='#'>
+              href='/sign-in'>
               Log in
             </Link>
           </div>
