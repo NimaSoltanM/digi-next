@@ -24,11 +24,11 @@ export default {
 
           if (!user || !user.password) return null;
 
-          const passwordsMath = await bcrypt.compare(password, user.password);
+          const passwordsMatch = await bcrypt.compare(password, user.password);
 
-          if (!passwordsMath) return null;
+          if (passwordsMatch) return user;
 
-          return user;
+          return null;
         }
       },
     }),
