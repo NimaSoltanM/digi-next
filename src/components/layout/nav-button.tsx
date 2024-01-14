@@ -1,4 +1,5 @@
 'use server';
+
 import { auth } from '@/auth/auth';
 import { Button } from '../ui/button';
 import Link from 'next/link';
@@ -25,10 +26,12 @@ export default async function NavButton() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuItem>
-            <UserIcon className='h-5 w-5 mr-2' />
-            Profile
-          </DropdownMenuItem>
+          <Link href='/profile'>
+            <DropdownMenuItem>
+              <UserIcon className='h-5 w-5 mr-2' />
+              Profile
+            </DropdownMenuItem>
+          </Link>
           <DropdownMenuItem>
             <SettingsIcon className='h-5 w-5 mr-2' />
             Settings
