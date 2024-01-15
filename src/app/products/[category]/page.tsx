@@ -30,8 +30,8 @@ export default function Component() {
         <Drawer>
           <DrawerTrigger asChild>
             <Button
-              className='fixed bottom-4 left-4 lg:hidden'
-              variant='outline'>
+              className='fixed bottom-4 right-4 lg:hidden'
+              variant='default'>
               Filters
             </Button>
           </DrawerTrigger>
@@ -98,7 +98,7 @@ export default function Component() {
           <div className='space-y-4'>
             <div>
               <Label htmlFor='sort'>Sort by</Label>
-              <Select id='sort'>
+              <Select>
                 <SelectTrigger className='w-full'>
                   <SelectValue placeholder='Select' />
                 </SelectTrigger>
@@ -112,7 +112,7 @@ export default function Component() {
             </div>
             <div>
               <Label htmlFor='filter'>Filter by price</Label>
-              <Select id='filter'>
+              <Select>
                 <SelectTrigger className='w-full'>
                   <SelectValue placeholder='Select' />
                 </SelectTrigger>
@@ -126,7 +126,7 @@ export default function Component() {
             </div>
             <div>
               <Label htmlFor='availability'>Availability</Label>
-              <Select id='availability'>
+              <Select>
                 <SelectTrigger className='w-full'>
                   <SelectValue placeholder='Select' />
                 </SelectTrigger>
@@ -142,7 +142,7 @@ export default function Component() {
           <Card>
             <CardHeader>
               <img
-                alt='Product 3'
+                alt='Product 1'
                 className='w-full h-48 object-cover'
                 height='200'
                 src='/placeholder.svg'
@@ -153,22 +153,28 @@ export default function Component() {
                 width='200'
               />
             </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='outline'>In Stock</Badge>
+            <CardContent className='p-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg'>
+              <h3 className='font-semibold text-lg mb-2'>Product 1</h3>
+              <div className='flex items-center justify-between mb-2'>
+                <span className='font-bold text-lg'>$49.99</span>
+                <Badge variant='secondary'>In Stock</Badge>
               </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
+              <div className='flex items-center gap-0.5 mb-4'>
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-muted stroke-muted-foreground' />
+                <StarIcon className='w-5 h-5 fill-muted stroke-muted-foreground' />
+              </div>
+              <Button className='w-full py-2 text-white bg-primary rounded-md hover:bg-primary-dark'>
+                BUY NOW
+              </Button>
             </CardContent>
           </Card>
           <Card>
             <CardHeader>
               <img
-                alt='Product 3'
+                alt='Product 1'
                 className='w-full h-48 object-cover'
                 height='200'
                 src='/placeholder.svg'
@@ -179,202 +185,44 @@ export default function Component() {
                 width='200'
               />
             </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
+            <CardContent className='p-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg'>
+              <h3 className='font-semibold text-lg mb-2'>Product 1</h3>
+              <div className='flex items-center justify-between mb-2'>
+                <span className='font-bold text-lg'>$49.99</span>
                 <Badge variant='destructive'>Out of Stock</Badge>
               </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='destructive'>Out of Stock</Badge>
+              <div className='flex items-center gap-0.5 mb-4'>
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-primary' />
+                <StarIcon className='w-5 h-5 fill-muted stroke-muted-foreground' />
+                <StarIcon className='w-5 h-5 fill-muted stroke-muted-foreground' />
               </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='outline'>In Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='destructive'>Out of Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='destructive'>Out of Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='outline'>In Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='destructive'>Out of Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <img
-                alt='Product 3'
-                className='w-full h-48 object-cover'
-                height='200'
-                src='/placeholder.svg'
-                style={{
-                  aspectRatio: '200/200',
-                  objectFit: 'cover',
-                }}
-                width='200'
-              />
-            </CardHeader>
-            <CardContent>
-              <h3 className='font-semibold text-lg'>Product 3</h3>
-              <p className='text-sm text-gray-500 dark:text-gray-400'>
-                This is a short description of product 3.
-              </p>
-              <div className='flex items-center justify-between mt-2'>
-                <span className='font-bold text-lg'>$39.99</span>
-                <Badge variant='destructive'>Out of Stock</Badge>
-              </div>
-              <Button className='mt-4 w-full'>BUY NOW</Button>
+              <Button className='w-full py-2 text-white bg-primary rounded-md hover:bg-primary-dark'>
+                BUY NOW
+              </Button>
             </CardContent>
           </Card>
         </div>
       </div>
     </div>
+  );
+}
+
+function StarIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'>
+      <polygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2' />
+    </svg>
   );
 }
